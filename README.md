@@ -10,16 +10,12 @@
 
 ## URL
 
-+----------+-----------------------+------+----------------------------------------------+
-| Method   | URI                   |      | Action                                       |
-+----------+-----------------------+------+----------------------------------------------+
+GET|HEAD -- api/cart
 
-| GET|HEAD | api/cart              |      | App\Http\Controllers\CartController@index    |
+POST -- api/cart
 
-| POST     | api/cart              |      | App\Http\Controllers\CartController@store    |
+DELETE -- api/cart
 
-| DELETE   | api/cart              |      | App\Http\Controllers\CartController@destroy  |
+DELETE -- api/cart/{product_id}
 
-| DELETE   | api/cart/{product_id} |      | App\Http\Controllers\CartController@delete   |
-
-| GET|HEAD | api/products          |      | App\Http\Controllers\ProductController@index | 
+GET|HEAD -- api/products
